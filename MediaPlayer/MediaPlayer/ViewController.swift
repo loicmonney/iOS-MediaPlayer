@@ -10,16 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var leftSwipe : UISwipeGestureRecognizer? = nil
+    var rightSwipe : UISwipeGestureRecognizer? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Add swipe recognizer
+        leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        leftSwipe!.direction = .Left
+        rightSwipe!.direction = .Right
+        view.addGestureRecognizer(leftSwipe!)
+        view.addGestureRecognizer(rightSwipe!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func handleSwipes(sender:UISwipeGestureRecognizer) {
+        if (sender.direction == .Left) {
+            performSegueWithIdentifier("playVideoSegue", sender: self)
+        }
+        else if (sender.direction == .Right) {
+            performSegueWithIdentifier("playMusicSegue", sender: self)
+        }
     }
-
-
 }
 
