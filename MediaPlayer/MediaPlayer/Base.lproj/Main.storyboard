@@ -90,7 +90,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZA-a5-nlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1661" y="209"/>
+            <point key="canvasLocation" x="-1507" y="225"/>
         </scene>
         <!--Play Music View Controller-->
         <scene sceneID="GrP-LU-VIa">
@@ -135,24 +135,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCF-Jf-fiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-125" y="-126"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lMT-XH-egc">
-            <objects>
-                <viewController id="Q3B-9I-NuB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Dfa-TE-gLK"/>
-                        <viewControllerLayoutGuide type="bottom" id="Spf-wH-3aL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VIQ-hK-Q9h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n7h-DW-bud" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="524" y="-126"/>
         </scene>
         <!--Play MovieUI Controller-->
         <scene sceneID="HaI-U0-TXX">
